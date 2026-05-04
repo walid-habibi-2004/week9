@@ -1,0 +1,86 @@
+/* Layout for agnostic primitives; colors come from inline props / parent classes */
+
+.agnostic-action-card {
+  --card-accent: #3b82f6;
+  position: relative;
+  width: min(220px, 100%);
+  padding: 1rem 1rem 1.25rem;
+  border-radius: 12px;
+  text-align: center;
+  isolation: isolate;
+}
+
+.agnostic-action-card__glow {
+  position: absolute;
+  inset: -2px;
+  border-radius: 14px;
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--card-accent) 85%, white),
+    var(--card-accent)
+  );
+  opacity: 0.45;
+  filter: blur(10px);
+  z-index: 0;
+}
+
+.agnostic-action-card__plate {
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+  min-height: 140px;
+  background: linear-gradient(
+    160deg,
+    color-mix(in srgb, var(--card-accent) 12%, #0f172a),
+    #020617
+  );
+  border: 1px solid color-mix(in srgb, var(--card-accent) 55%, transparent);
+  box-shadow:
+    inset 0 1px 0 color-mix(in srgb, var(--card-accent) 35%, transparent),
+    0 12px 28px rgba(0, 0, 0, 0.35);
+}
+
+.agnostic-action-card__hologram {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 42%;
+  transform: translate(-50%, -50%);
+  width: 88%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: #f8fafc;
+}
+
+.agnostic-action-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--card-accent) 28%, transparent);
+  color: var(--card-accent);
+}
+
+.agnostic-action-card__icon svg {
+  width: 1.35rem;
+  height: 1.35rem;
+}
+
+.agnostic-action-card__headline {
+  margin: 0;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  line-height: 1.25;
+  color: #e2e8f0;
+}
+
+.agnostic-action-card__footer {
+  width: 100%;
+  margin-top: 0.25rem;
+}

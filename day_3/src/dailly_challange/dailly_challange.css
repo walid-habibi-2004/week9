@@ -1,0 +1,112 @@
+.system-health-panel {
+  max-width: 22rem;
+}
+
+.ab-card {
+  text-align: left;
+  background: #fff;
+  color: #0f172a;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
+  overflow: hidden;
+}
+
+.ab-card__title {
+  margin: 0;
+  padding: 0.85rem 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid #e2e8f0;
+  background: #f8fafc;
+}
+
+.ab-card__body {
+  padding: 0.35rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.ab-status-row {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.65rem 1rem;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.ab-status-row:last-child {
+  border-bottom: none;
+}
+
+.ab-status-row__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  flex-shrink: 0;
+}
+
+.ab-status-row__device {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.ab-status-row__status {
+  color: #64748b;
+  font-size: 0.85rem;
+}
+
+.hardware-health-concept {
+  margin-top: 1rem;
+  max-width: 36rem;
+  text-align: left;
+}
+
+.hardware-health-concept__title {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.hardware-health-concept__pre {
+  margin: 0;
+  padding: 0.85rem 1rem;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--code-bg);
+  color: var(--text-h);
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+
+@media (prefers-color-scheme: dark) {
+  .ab-card {
+    background: #1e293b;
+    color: #f1f5f9;
+    border-color: #334155;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+  }
+
+  .ab-card__title {
+    background: #0f172a;
+    border-bottom-color: #334155;
+    color: #f8fafc;
+  }
+
+  .ab-status-row {
+    border-bottom-color: #334155;
+  }
+
+  .ab-status-row__device {
+    color: #f1f5f9;
+  }
+
+  .ab-status-row__status {
+    color: #94a3b8;
+  }
+}

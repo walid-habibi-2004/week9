@@ -1,0 +1,29 @@
+.admin-dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex: 1;
+  padding: 2rem 1.5rem 3rem;
+  text-align: left;
+}
+
+.admin-dashboard__header {
+  margin-bottom: 1.75rem;
+}
+
+.admin-dashboard__header h1 {
+  margin: 0 0 0.25rem;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+}
+
+.admin-dashboard__subtitle {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.admin-dashboard__main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}

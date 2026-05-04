@@ -1,0 +1,61 @@
+.session-brew-counter {
+  max-width: 22rem;
+  margin-inline: auto;
+  padding: 1.5rem;
+  text-align: left;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--code-bg);
+  box-shadow: var(--shadow);
+}
+
+.session-brew-counter h2 {
+  margin: 0 0 0.35rem;
+  font-size: 1.15rem;
+}
+
+.session-brew-counter__meta {
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.session-brew-counter__count {
+  margin: 0 0 1rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.session-brew-counter__value {
+  font-family: var(--mono);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-h);
+  line-height: 1;
+}
+
+.session-brew-counter__label {
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.session-brew-counter__action {
+  font: inherit;
+  cursor: pointer;
+  padding: 0.55rem 1rem;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  color: var(--accent);
+  background: var(--accent-bg);
+  transition: border-color 0.2s;
+}
+
+.session-brew-counter__action:hover {
+  border-color: var(--accent-border);
+}
+
+.session-brew-counter__action:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}

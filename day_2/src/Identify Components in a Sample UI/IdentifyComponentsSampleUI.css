@@ -1,0 +1,61 @@
+.identify-components-sample-ui {
+  text-align: left;
+  padding: 2rem 1.5rem 3rem;
+  max-width: 42rem;
+  margin-inline: auto;
+}
+
+.identify-components-sample-ui h1 {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.identify-components-sample-ui__section {
+  margin-bottom: 1.75rem;
+}
+
+.identify-components-sample-ui__section h2 {
+  font-size: 1.125rem;
+  margin: 0 0 0.5rem;
+}
+
+.identify-components-sample-ui__section p {
+  margin: 0 0 0.75rem;
+}
+
+.identify-components-sample-ui__list {
+  margin: 0.5rem 0 0;
+  padding: 0.75rem 1rem 0.75rem 1.35rem;
+  border-radius: 8px;
+  border: 2px solid var(--border);
+}
+
+.identify-components-sample-ui__list--layout {
+  border-color: #dc2626;
+  background: color-mix(in srgb, #dc2626 8%, transparent);
+}
+
+.identify-components-sample-ui__list--components {
+  margin-top: 0.75rem;
+  border-color: #2563eb;
+  background: color-mix(in srgb, #2563eb 8%, transparent);
+}
+
+.identify-components-sample-ui__section--takeaway {
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.identify-components-sample-ui .legend {
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+.identify-components-sample-ui .legend--red {
+  color: #dc2626;
+}
+
+.identify-components-sample-ui .legend--blue {
+  color: #2563eb;
+}

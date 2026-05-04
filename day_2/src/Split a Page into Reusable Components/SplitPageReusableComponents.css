@@ -1,0 +1,199 @@
+.split-page-reusable {
+  text-align: left;
+  padding: 2rem 1.5rem 3rem;
+  max-width: 46rem;
+  margin-inline: auto;
+}
+
+.split-page-reusable h1 {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.split-page-reusable__section {
+  margin-bottom: 2rem;
+}
+
+.split-page-reusable__section h2 {
+  font-size: 1.125rem;
+  margin: 0 0 0.5rem;
+}
+
+.split-page-reusable__section p {
+  margin: 0 0 0.75rem;
+}
+
+.split-page-reusable__monitor {
+  margin: 1.25rem 0 1.5rem;
+}
+
+.split-page-reusable__monitor-bezel {
+  border-radius: 10px;
+  padding: 10px;
+  background: linear-gradient(160deg, #2a2d36 0%, #1a1c22 100%);
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.split-page-reusable__dashboard {
+  border-radius: 6px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 140px;
+}
+
+.split-page-reusable__dash-row {
+  display: flex;
+  gap: 8px;
+  flex: 1;
+}
+
+.split-page-reusable__dash {
+  border-radius: 4px;
+  background: var(--code-bg);
+  border: 1px dashed var(--border);
+  opacity: 0.85;
+}
+
+.split-page-reusable__dash--top {
+  height: 22px;
+  flex-shrink: 0;
+}
+
+.split-page-reusable__dash--card {
+  flex: 1;
+  min-height: 48px;
+}
+
+.split-page-reusable__dash--wide {
+  flex: 1.4;
+  min-height: 56px;
+}
+
+.split-page-reusable__dash--chart {
+  flex: 0.85;
+  min-height: 56px;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  max-width: 56px;
+  margin-inline: auto;
+}
+
+.split-page-reusable__monitor-stand {
+  width: 80px;
+  height: 10px;
+  margin: 8px auto 0;
+  background: linear-gradient(180deg, #3d4049, #25272e);
+  border-radius: 0 0 4px 4px;
+}
+
+.split-page-reusable__monitor-caption {
+  margin: 0.65rem 0 0;
+  font-size: 0.85rem;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+.split-page-reusable__worksheet {
+  margin-top: 1.25rem;
+  padding: 1rem 1.1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--social-bg);
+}
+
+.split-page-reusable__label {
+  display: block;
+  font-weight: 600;
+  color: var(--text-h);
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.split-page-reusable__numbered {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.split-page-reusable__numbered li {
+  margin-bottom: 0.35rem;
+}
+
+.split-page-reusable__placeholder {
+  color: var(--text);
+  font-style: italic;
+  opacity: 0.85;
+}
+
+.split-page-reusable__section--bonus {
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.split-page-reusable__example {
+  margin: 1rem 0;
+  padding: 0.85rem 1rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--accent);
+  background: var(--accent-bg);
+}
+
+.split-page-reusable__example-label {
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-h);
+  margin-bottom: 0.35rem;
+}
+
+.split-page-reusable__example p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.split-page-reusable__example code {
+  font-family: var(--mono);
+  font-size: 0.9em;
+  background: var(--code-bg);
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
+
+.split-page-reusable__table-wrap {
+  overflow-x: auto;
+  margin-top: 1rem;
+}
+
+.split-page-reusable__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.split-page-reusable__table th,
+.split-page-reusable__table td {
+  border: 1px solid var(--border);
+  padding: 0.65rem 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.split-page-reusable__table th {
+  background: var(--code-bg);
+  color: var(--text-h);
+  font-weight: 600;
+}
+
+.split-page-reusable__table-hint {
+  text-align: center;
+  font-style: italic;
+  color: var(--text);
+  font-size: 0.9rem;
+}
